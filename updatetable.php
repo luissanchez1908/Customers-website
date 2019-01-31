@@ -24,9 +24,8 @@ $TELEPHONE = $_POST["TELEPHONE_$i"];
 $ADDRESS = $_POST["ADDRESS_$i"];
 $COMMENTS = $_POST["COMMENTS_$i"];
 
-//UPDATE `customers` SET `NAME`='Luis A',`TELEPHONE`=9087648409,`ADDRESS`='313 pearl st',`COMMENTS`= 'new' WHERE `TELEPHONE`= '9087648409'
 
-$query = "UPDATE mediaexpress.customers SET NAME =  \"$NAME\" , TELEPHONE = \"$TELEPHONE\" , ADDRESS= \"$ADDRESS\" ,COMMENTS = \"$COMMENTS\" WHERE TELEPHONE= $TELEPHONE";
+$query = "UPDATE database_name.customers SET NAME =  \"$NAME\" , TELEPHONE = \"$TELEPHONE\" , ADDRESS= \"$ADDRESS\" ,COMMENTS = \"$COMMENTS\" WHERE TELEPHONE= $TELEPHONE";
 
 $result = mysqli_query($conn, $query);
 
