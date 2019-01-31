@@ -25,7 +25,7 @@ Telephone: <input type = \"text\" id = \"TELEPHONE\" name = \"TELEPHONE\" ><BR>
 Address: <input type = \"text\" id = \"ADDRESS\" name = \"ADDRESS\" ><BR>
 Comments: <input type = \"text\" id = \"COMMENTS\"  name = \"COMMENTS\" ><BR>";
 
-$query = "SELECT NAME FROM mediaexpress.customers";
+$query = "SELECT NAME FROM database_name.customers";
 
 $result = mysqli_query($conn, $query);
 
