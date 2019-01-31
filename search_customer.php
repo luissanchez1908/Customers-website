@@ -13,7 +13,7 @@ $TELEPHONE = $_GET['telephone'];
 
 echo  "The search result is: $TELEPHONE";
 
-$query="SELECT * FROM mediaexpress.customers WHERE (`TELEPHONE` LIKE '%".$TELEPHONE."%')";
+$query="SELECT * FROM database_name.customers WHERE (`TELEPHONE` LIKE '%".$TELEPHONE."%')";
 $raw_results= mysqli_query($conn, $query);
 
 if($raw_results)
