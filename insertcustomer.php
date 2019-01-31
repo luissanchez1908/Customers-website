@@ -54,7 +54,7 @@ else
   	die("Connection Failed: " . mysqli_connect_error());
   }
 
-	$query = "SELECT name FROM mediaexpress.customers WHERE TELEPHONE = \"$TELEPHONE\"";
+	$query = "SELECT name FROM database_name.customers WHERE TELEPHONE = \"$TELEPHONE\"";
 
 	$result = mysqli_query($conn, $query);
 
