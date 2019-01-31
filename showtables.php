@@ -17,7 +17,7 @@ include 'index.php'; ?>
 <?php
 include 'dbconfig.php';
 
-$query1 = "select * from mediaexpress.customers";
+$query1 = "select * from database_name";
 
 echo "<BR>Customers: ";
 $result1 = mysqli_query($conn, $query1);
